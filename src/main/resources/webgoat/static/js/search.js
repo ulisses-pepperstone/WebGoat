@@ -31,6 +31,7 @@ function search(arg) {
       });
 
       if (elementId != null) {
+        document.getElementById(elementId).innerHTML = "<div>You searched for " + arg + "</div>";
         document.getElementById(elementId).click();
         categoryId = elementId.substring(0,elementId.indexOf("-"));
         //extra click to make sure menu does not disappear on same category search
